@@ -9,7 +9,7 @@ An automated login script for ecnu ecard system (www.ecard.ecnu.edu.cn) with a u
 
 利用urllib库向网站发送该三个字段值即可。
 
-其中`code`为验证码字段。查看网络请求容易得知该验证码图片的获取地址为 www.ecard.ecnu.edu.cn/util/rand。
+其中`code`为验证码字段。查看网络请求容易得知该验证码图片的获取地址为 www.ecard.ecnu.edu.cn/util/rand 。
 
 ![Request2](https://github.com/fawks96/ECNU_ecard_login/blob/master/Request2.png?raw=true)
 
@@ -18,3 +18,6 @@ An automated login script for ecnu ecard system (www.ecard.ecnu.edu.cn) with a u
 
 ## 使用
 将`login.py`中的`studentId`和`studentPwd`设为目标账号密码即可。默认通过文件批量传入。
+
+## 颜值打分功能
+登录后用户头像路径为 www.ecard.ecnu.edu.cn/head/username_1.jpg 。 通过颜值打分API接口`kan.msxiaobing.com/Api/ImageAnalyze`对获取的用户头像进行颜值评分。设置对应的头像存储路径后运行`facial_attractiveness_grading.py`即可。
